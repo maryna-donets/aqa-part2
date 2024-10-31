@@ -1,0 +1,10 @@
+{
+    "userNames":{
+        "validName":"standard_user",
+        "invalidName": "test"
+    },
+    "passwords": {
+        "validPassword": "secret_sauce",
+        "invalidPassword": "test"
+    }
+}
