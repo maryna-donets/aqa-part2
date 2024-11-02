@@ -19,7 +19,7 @@ class Login extends Base {
 	}
 
 	open() {
-		super.open("/");
+		super.open();
 	}
 
 	login(username, password) {
