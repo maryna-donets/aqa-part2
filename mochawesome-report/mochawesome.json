@@ -1,0 +1,176 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-02T10:56:16.820Z",
+    "end": "2024-11-02T10:56:27.141Z",
+    "duration": 10321,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d57e3720-a00b-48ce-bb4f-8794ca908325",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cyAdvanced\\inventory.cy.js",
+      "file": "cypress\\e2e\\cyAdvanced\\inventory.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cc5fc585-1f49-4fa2-a1a0-269f69368992",
+          "title": "Inventory",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should contain burger menu, cart, sorting",
+              "fullTitle": "Inventory should contain burger menu, cart, sorting",
+              "timedOut": null,
+              "duration": 2709,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.verifyBurger();\n_InventoryPage.default.verifyCart();\n_InventoryPage.default.verifySortOptins();",
+              "err": {},
+              "uuid": "f94e0c2b-26e2-421e-833a-17a02dfc680c",
+              "parentUUID": "cc5fc585-1f49-4fa2-a1a0-269f69368992",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "sorting has 4 option",
+              "fullTitle": "Inventory sorting has 4 option",
+              "timedOut": null,
+              "duration": 1216,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.sortingOptins();",
+              "err": {},
+              "uuid": "57737241-45ff-4d3d-ba01-d25b38cac003",
+              "parentUUID": "cc5fc585-1f49-4fa2-a1a0-269f69368992",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should open cart",
+              "fullTitle": "Inventory should open cart",
+              "timedOut": null,
+              "duration": 1063,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.openCart();\ncy.url().should(\"include\", \"cart.html\");",
+              "err": {},
+              "uuid": "14a8d99a-a498-426e-944a-f0ee882903d8",
+              "parentUUID": "cc5fc585-1f49-4fa2-a1a0-269f69368992",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should open item page",
+              "fullTitle": "Inventory should open item page",
+              "timedOut": null,
+              "duration": 1090,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.openItemByName(\"Sauce Labs Backpack\");",
+              "err": {},
+              "uuid": "b26dcddd-289c-4b7c-ab7a-b2d398b3348b",
+              "parentUUID": "cc5fc585-1f49-4fa2-a1a0-269f69368992",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should sort page",
+              "fullTitle": "Inventory should sort page",
+              "timedOut": null,
+              "duration": 1084,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_InventoryPage.default.sortElem();",
+              "err": {},
+              "uuid": "09de9ba4-1680-4a1c-8457-ac9d6fa66f67",
+              "parentUUID": "cc5fc585-1f49-4fa2-a1a0-269f69368992",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f94e0c2b-26e2-421e-833a-17a02dfc680c",
+            "57737241-45ff-4d3d-ba01-d25b38cac003",
+            "14a8d99a-a498-426e-944a-f0ee882903d8",
+            "b26dcddd-289c-4b7c-ab7a-b2d398b3348b",
+            "09de9ba4-1680-4a1c-8457-ac9d6fa66f67"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7162,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
