@@ -7,7 +7,8 @@ import InventoryPage from "../../support/POM/InventoryPage";
 describe("ItemPage", () => {
 	beforeEach(() => {
 		Login.open();
-		Login.login(creds.userNames.validName, creds.passwords.validPassword);
+		//Login.login(creds.userNames.validName, creds.passwords.validPassword);
+		Login.login(Cypress.env("USER_NAME"), Cypress.env("USER_PASSWORD"));
         InventoryPage.openItemByName('Sauce Labs Backpack')
 	});
 	it("should check item details", () => {
