@@ -64,6 +64,29 @@ describe("Cars", () => {
 		});
 	});
 
+	it("Post expense", () => {
+		
+		const car = {
+			carId: carId,
+			reportedAt: new Date().toISOString(),
+			mileage: 100501,
+			liters: 5,
+			totalCost: 45
+		};
+		cy.api({
+			method: "POST",
+			url: "https://qauto.forstudy.space/api/expenses",
+			body: car,
+			headers: {
+				Cookie: `sid=${sid}`,
+			},
+		}).then((response) => {
+			cy.log(JSON.stringify(response.body));
+			expect(response.status).to.equal(200);
+			expect(response.body.data.mileage).to.equal(car.mileage);
+		});
+	});
+
 	it("Delete Car", () => {
 		cy.api({
 			method: "DELETE",
