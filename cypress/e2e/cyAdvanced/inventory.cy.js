@@ -6,7 +6,7 @@ import InventoryPage from "../../support/POM/InventoryPage";
 describe("Inventory", () => {
 	beforeEach(() => {
 		Login.open();
-		Login.login(creds.userNames.validName, creds.passwords.validPassword);
+		Login.login(Cypress.env("USER_NAME"), Cypress.env("USER_PASSWORD"));
 	});
 
 	it("should contain burger menu, cart, sorting", () => {
